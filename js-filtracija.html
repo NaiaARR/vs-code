@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtriranje i sortiranje učenika</title>
+</head>
+<body>
+    <h2>Filtriranje učenika</h2>
+    <input type="text" id="filterInput" placeholder="Upiši ime za filtriranje...">
+    <button onclick="filtriraj()">Filtriraj</button>
+
+    <ul id="popis">
+        <li>Ian</li>
+        <li>Lukas</li>
+        <li>Naia Aurora</li>
+        <li>Jan</li>
+        <li>Tara</li>
+        <li>Leo</li>
+        <li>Karlo</li>
+        <li>Alan</li>
+        <li>Niko</li>
+        <li>Andro</li>
+        <li>Vanja</li>
+        <li>Jakov</li>
+    </ul>
+
+    <hr>
+
+    <h2>Sortiranje učenika (Dropdown lista)</h2>
+    <select id="dropdownUcenici">
+        <option>Jakov</option>
+        <option>Vanja</option>
+        <option>Andro</option>
+        <option>Alan</option>
+        <option>Karlo</option>
+        <option>Leo</option>
+        <option>Tara</option>
+        <option>Jan</option>
+        <option>Naia Aurora</option>
+        <option>Lukas</option>
+        <option>Ian</option>
+        <option>Niko</option>
+    </select>
+
+    <button onclick="sortirajDropdown()">Sortiraj abecedno</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
