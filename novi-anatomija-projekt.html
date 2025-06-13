@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ANATOMIJA</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="novi-anatomija-projekt-styles.css">
+    <link rel="stylesheet" href="novi-anatomija-projekt-styles.css" />
+    <link rel="stylesheet" href="pretraga-literature.css" />
     <script src="loginForm.js"></script>
+    <script src="pretraga-literature.js"></script>
 </head>
 <body>
   <div class="wrapper"><!-- POČETAK WRAPPERA -->
 
     <!-- Meni -->
     <nav>
-  <a href="kontakt.html">Kontakt</a>
-  <a href="javascript:void(0);" onclick="toggleLoginForm()">Login</a>
-  <a href="javascript:void(0);" onclick="toggleRegisterForm()">Registracija</a>
-  <a href="o-nama.html">O nama</a>
-  <a href="novosti.html">Novosti</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="javascript:void(0);" onclick="toggleLoginForm()">Login</a>
+      <a href="javascript:void(0);" onclick="toggleRegisterForm()">Registracija</a>
+      <a href="o-nama.html">O nama</a>
+      <a href="novosti.html">Novosti</a>
 
-  <div class="login-container">
-    <div class="login-form" id="loginForm" style="display:none;">
-      <!-- tvoj login forma: email, password, button -->
-    </div>
-    <div class="register-form" id="registerForm" style="display:none;">
-      <!-- forma za registraciju -->
-    </div>
-  </div>
-</nav>
+      <div class="login-container">
+        <div class="login-form" id="loginForm" style="display:none;">
+          <h3>Prijava</h3>
+          <input type="email" id="email" placeholder="Email adresa" required />
+          <input type="password" id="password" placeholder="Lozinka" required />
+          <button type="submit">Prijavi se</button>
+          <a href="#" class="forgot-password">Zaboravili ste lozinku?</a>
+        </div>
+        <div class="register-form" id="registerForm" style="display:none;">
+          <h3>Registracija</h3>
+          <input type="text" id="regIme" placeholder="Ime" required />
+          <input type="text" id="regPrezime" placeholder="Prezime" required />
+          <input type="email" id="regEmail" placeholder="Email adresa" required />
+          <input type="password" id="regPassword" placeholder="Lozinka" required />
+          <button type="submit">Registriraj se</button>
+        </div>
+      </div>
+    </nav>
 
     <!-- Pretraživač literature -->
-=======
-    <link rel="stylesheet"href="novi-anatomija-projekt-styles.css">
-   <script src="loginForm.js"></script>
-</head>
-<body>
-
-    <!-- Meni -->
-    <nav>
-        <a href="kontakt.html">Kontakt</a>
-       <a href="javascript:void(0);" onclick="toggleLoginForm()">Login</a>
-        <a href="o-nama.html">O nama</a>
-        <a href="novosti.html">Novosti</a>
-        <!--kod za loginin-->
-        <div class="login-container">
-    <div class="login-form" id="loginForm">
-        <h3>Prijava</h3>
-        <input type="email" id="email" placeholder="Email adresa" required />
-        <input type="password" id="password" placeholder="Lozinka" required />
-        <button type="submit">Prijavi se</button>
-        <a href="#" class="forgot-password">Zaboravili ste lozinku?</a>
-    </div>
-    <!--kraj koda za login-->
-</div>
-    
-</nav>
-
-<!-- 🔍 Pretraživač literature -->
->>>>>>> 4791afe2af7c1dbc3df74363c9cecf2828bf7b7a
     <form id="searchForm">
-        <input type="text" id="searchQuery" placeholder="Pretraži literaturu..." required>
+        <input type="text" id="searchQuery" placeholder="Pretraži literaturu..." required />
         <button type="submit">Pretraži</button>
     </form>
     <div id="results"></div>
-    <script src="pretraga-literature.js"></script>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="pretraga-literature.css">
 
     <!-- Naslov i kvadrati -->
     <div class="naslov">Anatomija</div>
@@ -106,68 +85,10 @@
     </div>
 
     <!-- Footer -->
-=======
-    <link rel="stylesheet"href="pretraga-literature.css">
-    <!-- Naslov u centru stranice -->
-    <div class="naslov">
-        Anatomija
-    </div>
-<h2>OSNOVNA PODJELA</h2>
-    <div class="kvadrati">
-    <!-- RENDGENSKA -->
-    <div class="kvadrat rendgenska" onclick="window.location.href='rendgenska-anatomija.html';"> 
-        <a href="rendgenska-anatomija.html">RENDGENSKA ANATOMIJA</a>
-    </div>
-
-    <!-- SUSTAVNA -->
-    <div class="kvadrat sustavna" onclick="window.location.href='sustavna-anatomija.html';">
-        <a href="sustavna-anatomija.html">SUSTAVNA ANATOMIJA</a>
-    </div>
-
-    <!-- TOPOGRAFSKA -->
-    <div class="kvadrat topografska" onclick="window.location.href='topografska-anatomija.html';">
-        <a href="topografska-anatomija.html">TOPOGRAFSKA ANATOMIJA</a>
-    </div>
-    <h2>MIŠIĆI</h2>
-    <!-- MIŠIĆI GLAVE -->
-    <div class="kvadrat misici-glave" onclick="window.location.href='misici-glave.html';">
-        <a href="misici-glave.html">MIŠIĆI GLAVE</a>
-    </div>
-
-    <!-- MIŠIĆI VRATA I TRUPA -->
-    <div class="kvadrat misici-vrata-i-trupa" onclick="window.location.href='misici-vrata-i-trupa.html';">
-        <a href="misici-vrata-i-trupa.html">MIŠIĆI VRATA I TRUPA</a>
-    </div>
-
-    <!--MIŠIĆI LEĐA-->
-    <div class="kvadrat misici-leda"nclick="window.location.href='misici-leda.html';">
-     <a href="misici-leda.html">MIŠIĆI LEĐA</a>
-    </div>    
-
-    <!--MIŠIĆI NADLAKTICE I PODLAKTICE-->
-    <div class="kvadrat misici-nadlaktice-podlaktice" onclick="window.location.href='misici-nadlaktice-podlaktice.html';">
-     <a href="misici-nadlaktice-podlaktice.html">MIŠIĆI NADLAKTICE I PODLAKTICE</a>
-    </div> 
-
-<!--MIŠIĆI DLANA-->
-    <div class="kvadrat misici-dlana" onclick="window.location.href='misici-dlana.html';">
-     <a href="misici-dlana.html">MIŠIĆI DLANA</a>
-    </div> 
-
-<!--MIŠIĆI STOPALA-->
-    <div class="kvadrat misici-stopala" onclick="window.location.href='misici-stopala.html';">
-     <a href="misici-stopala.html">MIŠIĆI STOPALA</a>
-    </div> 
-    
-</div>
->>>>>>> 4791afe2af7c1dbc3df74363c9cecf2828bf7b7a
     <footer>
         <p>&copy; 2025. Anatomija</p>
     </footer>
 
-<<<<<<< HEAD
   </div><!-- KRAJ WRAPPERA -->
-=======
->>>>>>> 4791afe2af7c1dbc3df74363c9cecf2828bf7b7a
 </body>
 </html>
